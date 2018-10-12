@@ -36,7 +36,11 @@ Script to set up sql database
 Server should be detached from view
 
 Interface will be web-based for ease of transition into other applications
+
+not docker due to windows restrictions
 ```
+
+# Todos
 
 - [x] Layout project parameters
 - [ ] Create the database
