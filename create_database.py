@@ -1,6 +1,11 @@
 import sqlite3
 import subprocess
 
+def is_sqlite3_installed():
+    x = subprocess.check_output(["sqlite3","--version"])
+    if "NOT" in x.upper():
+        raise Exception("SQLite must be installed") 
+
 def create_todo_database():
     conn = sqlite3.connect('Todo.db')
     c = conn.cursor()
