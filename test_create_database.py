@@ -12,7 +12,7 @@ def test_db_creation_destruction():
     assert(cd.confirm_database_creation())
     cd.remove_todo_database()
     assert not (cd.confirm_database_creation())
-    print("\n PASSED - Test database creation/destruction complete\n")
+    print("\nPASSED - Test database creation/destruction complete\n")
    
 def run():
     test_is_sqlite3_installed()  
