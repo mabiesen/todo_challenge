@@ -9,11 +9,18 @@ def create_todo_database():
 
 def remove_todo_database():
     try:
-        _ = subprocess.call(['rm','Todo.db'])
+        _ = subprocess.check_output(['rm','Todo.db'])
     except:
         print("error removing database, it probably doesn't exist")
 
+def confirm_database_creation():
+    output = subprocess.check_output('ls')
+    if "Todo.db" in output:
+         pass
+    else:
+         print("Todo.db does not appear to be created!!")
 
-if __name__ == "__main__":
-    remove_todo_dabase()
+if __name__ == "__main__" or __name__ == "install":
+    remove_todo_database()
     create_todo_database()
+    confirm_database_creation()
