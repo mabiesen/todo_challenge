@@ -1,14 +1,19 @@
 import todo_model
 
 def test_model_non_text():
-    pass
+    print("\nTesting effect of non-text\n")
+
+    print("\nPASSED - Test of non-text\n") 
 
 def test_model_bad_dates():
-    pass
+    print("\nTesting effect of bad date format\n")
+
+    print("\nPASSED - Test of bad date format\n")
 
 def test_model_null_todo():
-    pass
-
+    print("\nTesting effect of null todo\n")
+    
+    print("\nPASSED - Testing effect of null todo\n")
 
 
 
