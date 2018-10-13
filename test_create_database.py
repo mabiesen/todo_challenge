@@ -16,7 +16,7 @@ def test_db_creation_destruction():
    
 def run():
     x = "-----------------------------"
-    print("\nRUNNING TODO MODEL TESTS")
+    print("\nRUNNING DATABASE CREATION TESTS")
     test_is_sqlite3_installed()  
     print(x)
     test_db_creation_destruction()
