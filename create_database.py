@@ -17,14 +17,13 @@ def remove_todo_database():
     try:
         _ = subprocess.check_output(['rm','Todo.db'])
     except:
-        print("error removing database, it probably doesn't exist")
+        print("\nDatabase does not exist")
 
 def confirm_database_creation():
     output = subprocess.check_output('ls')
     if "Todo.db" in output:
          return True
     else:
-         print("Todo.db does not appear to be created!!")
          return False
 
 if __name__ == "__main__" or __name__ == "install":
