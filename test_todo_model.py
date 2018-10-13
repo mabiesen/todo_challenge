@@ -18,9 +18,14 @@ def test_model_null_todo():
 
 
 def run():
+    x = "--------------------------------"
+    print("\nRUNNING TODO MODEL TESTS")
     test_model_non_text()
+    print(x)
     test_model_bad_dates()
+    print(x)
     test_model_null_todo()
+    print(x)
 
 
 if __name__ == "__main__":

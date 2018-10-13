@@ -15,8 +15,12 @@ def test_db_creation_destruction():
     print("\nPASSED - Test database creation/destruction complete\n")
    
 def run():
+    x = "-----------------------------"
+    print("\nRUNNING TODO MODEL TESTS")
     test_is_sqlite3_installed()  
+    print(x)
     test_db_creation_destruction()
+    print(x)
 
 if __name__ == "__main__":
     run()
