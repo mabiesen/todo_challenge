@@ -19,6 +19,8 @@ Purpose: Throw an error if data is invalid
 Note: throwing error here means view did not control input,
 which it should for real time feedback.
 '''
+        if isinstance(self.todo, int):
+            raise Exception("Integer is not allowed for todo")
         if len(self.todo) < 4 or self.todo.upper() == "NULL":
            raise Exception("Todo item doesnt look real,\n"
 				"todo is %s"%(self.todo))
@@ -29,5 +31,8 @@ which it should for real time feedback.
         if self.creationtime == "":
             self.creationtime = now.strftime("%H%M%S")
 
-        
+        if not time.strptime(self.creationdate, "%Y%m%d"):
+            raise Exception("Date provided in incorrect format")
+        if not time.strptime(self.creationtime, "%H%M%S"):
+            raise Exception("Time provided in incorrect format")
  
