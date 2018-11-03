@@ -1,4 +1,4 @@
-#Schema
+# Schema
 ```
 username - ""
 password - ""
@@ -11,7 +11,7 @@ Todo - text
 creationtime - datetime
 ```
 
-#Creation
+# Creation
 ```
 Its up to you to install mysql
 Script will merely create the database
